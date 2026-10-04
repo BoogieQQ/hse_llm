@@ -4,8 +4,6 @@
 
 ## 2. Подготовить окружение обучения
 
-Далее нужен Linux с NVIDIA GPU, Python 3.10 и совместимым драйвером CUDA. Использованные версии: PyTorch 2.6.0 с CUDA 12.4 и FlashAttention 2.7.3. Установка пакетов требует интернета либо заранее подготовленного зеркала/набора wheels.
-
 ```bash
 python3.10 -m venv .venv
 python -m pip install -r requirements.txt
