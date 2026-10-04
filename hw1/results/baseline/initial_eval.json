@@ -1,0 +1,7 @@
+{
+  "initial_eval_loss": 11.218228340148926,
+  "initial_eval_model_preparation_time": 0.0021,
+  "initial_eval_runtime": 43.4522,
+  "initial_eval_samples_per_second": 115.069,
+  "initial_eval_steps_per_second": 14.384
+}

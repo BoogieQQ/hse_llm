@@ -1,0 +1,19 @@
+{
+  "eval_loss": 4.723650932312012,
+  "eval_runtime": 43.5953,
+  "eval_samples_per_second": 114.691,
+  "eval_steps_per_second": 14.336,
+  "epoch": 0.019595391454232062,
+  "elapsed_seconds": 945.736,
+  "token_weighted_eval_loss": 4.661724427200648,
+  "token_weighted_perplexity": 105.81840104274411,
+  "eval_predicted_tokens": 2154235,
+  "perplexity": 112.57851983897724,
+  "training_seconds": 900.0724377290026,
+  "global_step": 2376,
+  "train_examples": 38016,
+  "processed_token_positions": 19464192,
+  "peak_training_memory_gb": 22.248334407806396,
+  "last_step_seconds": 0.38524345900077606,
+  "overrun_seconds": 0.07243772900255863
+}

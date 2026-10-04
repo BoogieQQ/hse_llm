@@ -1,0 +1,112 @@
+{
+  "command": "train",
+  "num_proc": 8,
+  "name": "lr5e5",
+  "batch_size": 16,
+  "accumulation": 1,
+  "lr": 5e-05,
+  "scheduler": "constant",
+  "optim": "adamw_torch_fused",
+  "compile": false,
+  "dtype": "bf16",
+  "tf32": true,
+  "initial": false,
+  "budget_seconds": 900,
+  "schedule_description": "wall-clock; 30s warmup; decay to 0.1 for cosine/linear",
+  "training_arguments": {
+    "output_dir": "results/lr5e5",
+    "optim": "adamw_torch_fused",
+    "num_train_epochs": 1,
+    "per_device_train_batch_size": 16,
+    "per_device_eval_batch_size": 8,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "adam_beta1": 0.9,
+    "adam_beta2": 0.999,
+    "adam_epsilon": 1e-08,
+    "max_grad_norm": 1.0,
+    "logging_steps": 5,
+    "logging_first_step": true,
+    "save_strategy": "no",
+    "eval_strategy": "no",
+    "load_best_model_at_end": false,
+    "bf16": true,
+    "fp16": false,
+    "tf32": true,
+    "gradient_checkpointing": false,
+    "dataloader_num_workers": 4,
+    "dataloader_pin_memory": true,
+    "torch_compile": false,
+    "report_to": "none",
+    "seed": 42,
+    "data_seed": 42,
+    "disable_tqdm": true,
+    "remove_unused_columns": false,
+    "logging_nan_inf_filter": false,
+    "dataloader_drop_last": true
+  },
+  "environment": {
+    "python": "3.10.12",
+    "versions": {
+      "torch": "2.6.0",
+      "transformers": "4.52.4",
+      "datasets": "3.6.0",
+      "accelerate": "1.6.0",
+      "flash-attn": "2.7.3"
+    },
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_memory_bytes": 85293072384,
+    "gpu_count": 1,
+    "torch_cuda": "12.4",
+    "seed": 42,
+    "model_config": {
+      "hidden_size": 2048,
+      "num_hidden_layers": 12,
+      "num_attention_heads": 16,
+      "num_key_value_heads": 8,
+      "intermediate_size": 8192,
+      "head_dim": 128,
+      "hidden_act": "silu",
+      "initializer_range": 0.02,
+      "scale_attn_weights": true,
+      "use_cache": true
+    }
+  },
+  "dataset": {
+    "dataset": "wikimedia/wikipedia",
+    "config": "20231101.ru",
+    "source_split": "train",
+    "rows": 1945063,
+    "train_rows": 1940063,
+    "eval_rows": 5000,
+    "loader": "offline original Hub parquet shards, original order",
+    "raw_fingerprint": "9a5aac3f7dc3c74a",
+    "tokenized_fingerprint": "da1a5de44f249d8c",
+    "split": "eval = original rows [0, 5000); train = [5000, N)",
+    "boundary_examples": [
+      {
+        "id": "7",
+        "title": "Литва",
+        "url": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%82%D0%B2%D0%B0"
+      },
+      {
+        "id": "9649",
+        "title": "Хайле Селассие",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%B9%D0%BB%D0%B5%20%D0%A1%D0%B5%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D0%B5"
+      },
+      {
+        "id": "9650",
+        "title": "Чау-чау",
+        "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%83-%D1%87%D0%B0%D1%83"
+      }
+    ],
+    "tokenizer": "ai-forever/rugpt3small_based_on_gpt2",
+    "max_length": 512,
+    "shards": 32,
+    "padding_labels": -100,
+    "packing": false,
+    "truncation": true
+  },
+  "parameter_count": 960881664
+}
