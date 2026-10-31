@@ -1,0 +1,17 @@
+{
+  "name": "base",
+  "method": "base",
+  "lora": null,
+  "train_examples": 14731,
+  "test_examples": 819,
+  "trainable_parameters": 0,
+  "total_parameters": 1543714304,
+  "train_seconds": 0,
+  "peak_allocated_gib": 0,
+  "peak_reserved_gib": 0,
+  "learning_rate": null,
+  "optimizer_steps": 0,
+  "test_loss": 1.9076886177062988,
+  "rouge1": 0.3709161302363816,
+  "rougeL": 0.28615887062588324
+}

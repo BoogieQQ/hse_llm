@@ -1,0 +1,5 @@
+data/
+results/*/checkpoint/
+results/*/trainer/
+logs/
+__pycache__/

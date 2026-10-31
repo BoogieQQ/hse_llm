@@ -1,0 +1,17 @@
+{
+  "name": "full",
+  "method": "full",
+  "lora": null,
+  "train_examples": 14731,
+  "test_examples": 819,
+  "trainable_parameters": 1543714304,
+  "total_parameters": 1543714304,
+  "train_seconds": 442.74695807299577,
+  "peak_allocated_gib": 20.557719230651855,
+  "peak_reserved_gib": 42.375,
+  "learning_rate": 2e-05,
+  "optimizer_steps": 921,
+  "test_loss": 1.2275326251983643,
+  "rouge1": 0.46599144657513825,
+  "rougeL": 0.37433926808508766
+}

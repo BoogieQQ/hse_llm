@@ -1,0 +1,27 @@
+{
+  "name": "lora_all_attention",
+  "method": "lora",
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "train_examples": 14731,
+  "test_examples": 819,
+  "trainable_parameters": 4358144,
+  "total_parameters": 1548072448,
+  "train_seconds": 481.534861063119,
+  "peak_allocated_gib": 11.389801979064941,
+  "peak_reserved_gib": 36.443359375,
+  "learning_rate": 0.0001,
+  "optimizer_steps": 921,
+  "test_loss": 1.2427548170089722,
+  "rouge1": 0.4615670369209677,
+  "rougeL": 0.36901228105286477
+}

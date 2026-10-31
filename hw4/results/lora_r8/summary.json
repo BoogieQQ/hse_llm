@@ -1,0 +1,25 @@
+{
+  "name": "lora_r8",
+  "method": "lora",
+  "lora": {
+    "r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "train_examples": 14731,
+  "test_examples": 819,
+  "trainable_parameters": 1089536,
+  "total_parameters": 1544803840,
+  "train_seconds": 399.5084914858453,
+  "peak_allocated_gib": 10.853981971740723,
+  "peak_reserved_gib": 35.984375,
+  "learning_rate": 0.0001,
+  "optimizer_steps": 921,
+  "test_loss": 1.261601209640503,
+  "rouge1": 0.4581217959047854,
+  "rougeL": 0.3654381563947364
+}
