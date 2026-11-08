@@ -1,0 +1,17 @@
+{
+  "name": "rl_exact",
+  "selected_step": 120,
+  "training_seconds": 1361.2325,
+  "peak_memory_gib": null,
+  "train_metrics": {
+    "train_runtime": 1361.2325,
+    "train_samples_per_second": 0.705,
+    "train_steps_per_second": 0.088,
+    "total_flos": 0.0,
+    "train_loss": -0.007170411792995897,
+    "epoch": 0.012924071082390954,
+    "step": 120
+  },
+  "validation_metrics": null,
+  "checkpoint": "/home/edu/ivan_borisov/hw5/checkpoints/rl_exact"
+}

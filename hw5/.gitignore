@@ -1,0 +1,9 @@
+.venv/
+.cache/
+cache/
+tmp/
+lib/
+checkpoints/
+logs/
+data/
+env.sh

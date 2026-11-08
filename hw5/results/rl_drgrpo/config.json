@@ -1,0 +1,29 @@
+{
+  "name": "rl_drgrpo",
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "reward": "partial",
+  "loss_type": "dr_grpo",
+  "scale_rewards": "none",
+  "max_steps": 120,
+  "learning_rate": 2e-05,
+  "num_generations": 8,
+  "max_prompt_length": 2048,
+  "max_completion_length": 192,
+  "batch_size": 8,
+  "beta": 0.01,
+  "temperature": 1.3,
+  "bf16": true,
+  "use_vllm": true,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_target_modules": [
+    "in_proj_qkv",
+    "in_proj_z",
+    "o_proj",
+    "out_proj",
+    "q_proj",
+    "v_proj"
+  ],
+  "seed": 42
+}
